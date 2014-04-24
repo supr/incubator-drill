@@ -140,11 +140,11 @@ int main(int argc, char* argv[]) {
 
         UserServerEndPoint user_server(drill_addr,port);
 
-        ifstream f(plan_filename);
+        ifstream f(plan_filename.c_str());
         string plan((std::istreambuf_iterator<char>(f)), (std::istreambuf_iterator<char>()));
         cerr << "plan = " << plan << endl;
 
-        ifstream f2(plan2_filename);
+        ifstream f2(plan2_filename.c_str());
         string plan2((std::istreambuf_iterator<char>(f2)), (std::istreambuf_iterator<char>()));
         cerr << "plan2 = " << plan2 << endl;
 

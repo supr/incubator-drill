@@ -2,6 +2,7 @@
 #define RECORDBATCH_H
 
 //using namespace exec::shared;
+#include <stdio.h>
 #include <stdint.h>
 #include <vector>
 #include <assert.h>

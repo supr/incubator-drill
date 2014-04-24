@@ -21,8 +21,6 @@ namespace asio = boost::asio;
 
 namespace Drill {
 
-    class vector;
-    class queue;
     class DrillClientImpl;
     class InBoundRpcMessage;
     class OutBoundRpcMessage;
