@@ -43,6 +43,6 @@ set_property(
 message("ProtoCpp = " ${ProtoCpp})
 message("DrillClientCpp = " ${DrillClientCpp})
 add_executable(async-client example/async-client.cc ${AsyncDrillClientCpp} ${ProtoCpp}) 
-add_executable(client example/client.cc ${DrillClientCpp} ${ProtoCpp}) 
+#add_executable(client example/client.cc ${DrillClientCpp} ${ProtoCpp}) 
 target_link_libraries(async-client ${Boost_LIBRARIES} ${PROTOBUF_LIBRARY} drillClient)
-target_link_libraries(client ${Boost_LIBRARIES} ${PROTOBUF_LIBRARY})
+#target_link_libraries(client ${Boost_LIBRARIES} ${PROTOBUF_LIBRARY})
